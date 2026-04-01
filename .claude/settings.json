@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Bash(npm run:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git restore:*)"
+    ],
+    "deny": [
+      "Bash(rm:*)",
+      "Bash(del:*)",
+      "Bash(npm install:*)",
+      "Bash(npm i:*)",
+      "Bash(pip install:*)",
+      "Bash(git push:*)",
+      "Bash(sh:*)",
+      "Bash(bash:*)",
+      "Bash(curl:*)",
+      "Bash(powershell:*)",
+      "Bash(rmdir:*)"
+    ]
+  }
+}
