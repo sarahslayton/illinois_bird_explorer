@@ -22,7 +22,7 @@
   --link:       var(--blue-mid);
 
   /* Typography */
-  --font-heading: 'Merriweather', Georgia, serif;
+  --font-heading: 'Montserrat', 'Source Sans 3', system-ui, sans-serif;
   --font-body:    'Source Sans 3', system-ui, sans-serif;
 
   /* Spacing scale (base 4px) */
