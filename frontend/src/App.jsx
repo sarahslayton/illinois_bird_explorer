@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 
 import HomePage from './pages/HomePage'
 import BirdSpeciesPage from './pages/BirdSpeciesPage'
+import SpeciesOverviewPage from './pages/SpeciesOverviewPage'
 import MigrationPage from './pages/MigrationPage'
 import MonitoringPage from './pages/MonitoringPage'
 import ConservationPage from './pages/ConservationPage'
@@ -19,7 +20,8 @@ export default function App() {
       <main className="main-content">
         <Routes>
           <Route path="/"              element={<HomePage />} />
-          <Route path="/bird-species"  element={<BirdSpeciesPage />} />
+          <Route path="/bird-species"              element={<BirdSpeciesPage />} />
+          <Route path="/bird-species/:slug"        element={<SpeciesOverviewPage />} />
           <Route path="/migration"     element={<MigrationPage />} />
           <Route path="/monitoring"    element={<MonitoringPage />} />
           <Route path="/conservation"  element={<ConservationPage />} />

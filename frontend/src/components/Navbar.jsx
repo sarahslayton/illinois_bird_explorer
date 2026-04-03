@@ -5,11 +5,7 @@ const NAV_ITEMS = [
     label: 'Bird Species',
     path: '/bird-species',
     dropdown: [
-      { label: 'Species Overview', path: '#' },
-      { label: 'Browse All Species', path: '#' },
-      { label: 'Rare & Uncommon Birds', path: '#' },
-      { label: 'Species by Season', path: '#' },
-      { label: 'Species by Region', path: '#' },
+      { label: 'Species Accounts', path: '/bird-species' },
     ],
   },
   {
