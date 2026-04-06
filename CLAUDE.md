@@ -55,6 +55,9 @@ ESLint config (`eslint.config.js`) uses the flat config format with React hooks 
 – **Spacing:** Every spacing decision follows consistent tokens. Random Tailwind steps are not acceptable.
 – **Depth:** Build with a surface hierarchy in mind (base → elevated → floating). Everything sitting flat at the same level is not good enough.
 
+## Placeholder Content
+– Any section of AI-generated text that will be replaced with real content later must be preceded by a visible **"Placeholder text"** label rendered on the page (not just a code comment). Use the `.placeholder-label` CSS class for this. Apply it before every generated paragraph, data value, or descriptive block.
+
 ## Reference Images
 – ONLY use the color palette in the `color_palette/` folder. There is text associated with them that includes suggestions for their use, please abide by them. 
 – Before starting any design work, look through the `reference_photos/` folder. It includes screenshots of websites from the University of Illinois. Use these logos, fonts, and other visual features for to guide the development of the website frontend.

@@ -1,0 +1,61 @@
+export const EXTINCT_BIRDS = [
+  {
+    slug: 'passenger-pigeon',
+    common: 'Passenger Pigeon',
+    scientific: 'Ectopistes migratorius',
+    extinctYear: '1914',
+    lastIllinoisRecord: 'ca. 1890s',
+    diet: 'Mast (acorns, beechnuts, chestnuts), seeds, berries, and invertebrates',
+    habitat: 'Deciduous forests and forest edges; foraged in open agricultural areas',
+    causeOfExtinction: 'Commercial mass hunting for meat markets combined with wholesale destruction of old-growth forest nesting habitat',
+    formerStatus: 'Once among the most abundant bird species on Earth, with flocks estimated in the billions that darkened the sky over Illinois for hours as they passed',
+  },
+  {
+    slug: 'carolina-parakeet',
+    common: 'Carolina Parakeet',
+    scientific: 'Conuropsis carolinensis',
+    extinctYear: '1918',
+    lastIllinoisRecord: 'ca. 1860s–1870s',
+    diet: 'Seeds, fruits, and grain — particularly fond of cocklebur, thistle, and orchard fruits',
+    habitat: 'River bottomland forests, swamp edges, and mature gallery forests along major waterways',
+    causeOfExtinction: 'Persecution by farmers who viewed the species as an agricultural pest, combined with habitat loss and collection for the pet and feather trades',
+    formerStatus: 'The only native parrot of the eastern United States; flocks were historically recorded along the Illinois and Mississippi River corridors',
+  },
+  {
+    slug: 'ivory-billed-woodpecker',
+    common: 'Ivory-billed Woodpecker',
+    scientific: 'Campephilus principalis',
+    extinctYear: 'Likely extinct (last confirmed record 1944)',
+    lastIllinoisRecord: 'Historically recorded in far southern Illinois in the 19th century',
+    diet: 'Beetle larvae extracted from freshly dead trees, supplemented by other insects and some fruit',
+    habitat: 'Mature bottomland hardwood forests with large-diameter trees and abundant standing deadwood',
+    causeOfExtinction: 'Logging of old-growth bottomland forests eliminated the large tracts of mature forest the species required; hunting for specimens contributed to the final decline',
+    formerStatus: 'The largest woodpecker in the United States; required vast tracts of virgin bottomland forest and was never common in Illinois even historically',
+  },
+  {
+    slug: 'eskimo-curlew',
+    common: 'Eskimo Curlew',
+    scientific: 'Numenius borealis',
+    extinctYear: 'Likely extinct (last confirmed record 1963)',
+    lastIllinoisRecord: 'Regularly recorded as a migrant in the 19th century; last Illinois records from the early 1900s',
+    diet: 'Invertebrates, berries, and insects — particularly relied on Rocky Mountain grasshoppers during fall migration staging',
+    habitat: 'Arctic tundra for breeding; grasslands and prairies during migration; South American pampas in winter',
+    causeOfExtinction: 'Unregulated commercial hunting during migration, extinction of the Rocky Mountain grasshopper (a key food source), and conversion of prairie stopover habitat to agriculture',
+    formerStatus: 'Once one of the most abundant shorebirds in North America, passing through Illinois in enormous flocks during spring and fall migration across former tallgrass prairie',
+  },
+  {
+    slug: 'bachmans-warbler',
+    common: "Bachman's Warbler",
+    scientific: 'Vermivora bachmanii',
+    extinctYear: 'Likely extinct (last confirmed record 1988)',
+    lastIllinoisRecord: 'Occasionally recorded as a migrant and possible breeder in far southern Illinois in the late 19th and early 20th centuries',
+    diet: 'Insects and spiders gleaned from foliage in early spring before full leaf-out',
+    habitat: 'Cane-dominated bottomland swamp forest for breeding; Cuban forest and woodland for wintering',
+    causeOfExtinction: 'Loss of cane (Arundinaria gigantea) understory in bottomland forests on breeding grounds, combined with deforestation of Cuban wintering habitat',
+    formerStatus: 'Always rare and poorly known; considered the rarest songbird in North America for most of the 20th century before disappearing entirely',
+  },
+]
+
+export function getExtinctBirdBySlug(slug) {
+  return EXTINCT_BIRDS.find((b) => b.slug === slug) || null
+}

@@ -97,6 +97,7 @@ export default function SpeciesOverviewPage() {
           {/* Life history */}
           <div className="species-overview__life-history">
             <h2 className="species-overview__section-heading">Life History</h2>
+            <span className="placeholder-label">Placeholder text</span>
             <dl className="life-history-grid">
               {LIFE_HISTORY.map(({ label, key }) => (
                 <div key={key} className="life-history-item">
