@@ -284,9 +284,9 @@
 ───────────────────────────────────────── */
 .hero {
   position: relative;
-  min-height: calc(75vh - 54px);
+  min-height: calc(96vh - 94px);
   background-size: cover;
-  background-position: center 30%;
+  background-position: center bottom;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -326,7 +326,11 @@
   max-width: var(--max-content);
   width: 100%;
   margin: 0 auto;
-  padding: var(--sp-20) var(--sp-8);
+  padding: 0 var(--sp-8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__label {
@@ -347,7 +351,7 @@
   line-height: 1.0;
   letter-spacing: -0.03em;
   color: var(--white);
-  margin-bottom: var(--sp-6);
+  margin-bottom: 6rem;
   max-width: 14ch;
 }
 
@@ -366,6 +370,7 @@
   gap: var(--sp-4);
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 
