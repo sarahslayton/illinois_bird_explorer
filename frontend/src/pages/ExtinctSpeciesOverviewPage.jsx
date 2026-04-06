@@ -47,11 +47,12 @@ export default function ExtinctSpeciesOverviewPage() {
           {/* Photo + historical notes row */}
           <div className="species-overview__media">
             <div className="species-overview__photo-wrap">
-              <div className="species-overview__map-placeholder">
-                <span className="species-overview__map-icon" aria-hidden="true">◎</span>
-                <p className="species-overview__map-label">Historical Illustration</p>
-                <p className="species-overview__map-sub">Not yet available</p>
-              </div>
+              <img
+                className="species-overview__photo"
+                src={`/species_photos/extinct/${bird.image}`}
+                alt={bird.common}
+                onError={(e) => { e.currentTarget.style.display = 'none' }}
+              />
             </div>
             <div className="species-overview__map-wrap">
               <div className="species-overview__map-placeholder">

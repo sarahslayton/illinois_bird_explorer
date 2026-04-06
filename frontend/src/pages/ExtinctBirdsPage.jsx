@@ -61,7 +61,7 @@ export default function ExtinctBirdsPage() {
                       <div className="species-card__photo-wrap">
                         <img
                           className="species-card__photo"
-                          src={`/species_photos/${bird.slug}.jpg`}
+                          src={`/species_photos/extinct/${bird.image}`}
                           alt={bird.common}
                           onError={(e) => {
                             e.currentTarget.classList.add('species-card__photo--missing')

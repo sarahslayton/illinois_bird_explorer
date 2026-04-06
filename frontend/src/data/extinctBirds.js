@@ -1,6 +1,7 @@
 export const EXTINCT_BIRDS = [
   {
     slug: 'passenger-pigeon',
+    image: 'passenger_pigeon.jpg',
     common: 'Passenger Pigeon',
     scientific: 'Ectopistes migratorius',
     extinctYear: '1914',
@@ -12,6 +13,7 @@ export const EXTINCT_BIRDS = [
   },
   {
     slug: 'carolina-parakeet',
+    image: 'carolina_parrot.jpg',
     common: 'Carolina Parakeet',
     scientific: 'Conuropsis carolinensis',
     extinctYear: '1918',
@@ -23,6 +25,7 @@ export const EXTINCT_BIRDS = [
   },
   {
     slug: 'ivory-billed-woodpecker',
+    image: 'ivory_billed_woodpecker.jpg',
     common: 'Ivory-billed Woodpecker',
     scientific: 'Campephilus principalis',
     extinctYear: 'Likely extinct (last confirmed record 1944)',
@@ -34,6 +37,7 @@ export const EXTINCT_BIRDS = [
   },
   {
     slug: 'eskimo-curlew',
+    image: 'eskimo_curlew.jpg',
     common: 'Eskimo Curlew',
     scientific: 'Numenius borealis',
     extinctYear: 'Likely extinct (last confirmed record 1963)',
@@ -45,6 +49,7 @@ export const EXTINCT_BIRDS = [
   },
   {
     slug: 'bachmans-warbler',
+    image: 'bachmans_warbler.jpg',
     common: "Bachman's Warbler",
     scientific: 'Vermivora bachmanii',
     extinctYear: 'Likely extinct (last confirmed record 1988)',
