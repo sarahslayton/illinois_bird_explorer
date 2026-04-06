@@ -300,12 +300,12 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 15% 60%, rgba(19, 41, 75, 0.82) 0%, transparent 55%),
-    radial-gradient(ellipse at 75% 15%, rgba(31, 64, 150, 0.45) 0%, transparent 45%),
+    radial-gradient(ellipse at 15% 60%, rgba(19, 41, 75, 0.63) 0%, transparent 55%),
+    radial-gradient(ellipse at 75% 15%, rgba(31, 64, 150, 0.32) 0%, transparent 45%),
     linear-gradient(to top,
-      rgba(19, 41, 75, 0.93) 0%,
-      rgba(19, 41, 75, 0.42) 40%,
-      rgba(19, 41, 75, 0.18) 100%);
+      rgba(19, 41, 75, 0.78) 0%,
+      rgba(19, 41, 75, 0.33) 40%,
+      rgba(19, 41, 75, 0.11) 100%);
   z-index: 1;
   pointer-events: none;
 }
