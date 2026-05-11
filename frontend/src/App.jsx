@@ -1,6 +1,7 @@
+import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Navbar from './components/Navbar'
+import Header from './components/Header'
 import Footer from './components/Footer'
 
 import HomePage from './pages/HomePage'
@@ -29,10 +30,21 @@ import BirdLabHistoryPage from './pages/BirdLabHistoryPage'
 import BirdLabResearchPage from './pages/BirdLabResearchPage'
 import BirdLabResourcesPage from './pages/BirdLabResourcesPage'
 
-export default function App() {
+function AppLayout() {
+  useEffect(() => {
+    const el = document.querySelector('ilw-header')
+    if (!el) return
+    const observer = new ResizeObserver(([entry]) => {
+      const h = entry.borderBoxSize?.[0]?.blockSize ?? entry.contentRect.height
+      document.documentElement.style.setProperty('--header-height', `${Math.ceil(h)}px`)
+    })
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <BrowserRouter>
-      <Navbar />
+    <>
+      <Header />
       <main className="main-content">
         <Routes>
           <Route path="/"              element={<HomePage />} />
@@ -63,6 +75,14 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+    </>
+  )
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppLayout />
     </BrowserRouter>
   )
 }
