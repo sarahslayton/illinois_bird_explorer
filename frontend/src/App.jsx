@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -31,16 +31,11 @@ import BirdLabResearchPage from './pages/BirdLabResearchPage'
 import BirdLabResourcesPage from './pages/BirdLabResourcesPage'
 
 function AppLayout() {
+  const { pathname } = useLocation()
+
   useEffect(() => {
-    const el = document.querySelector('ilw-header')
-    if (!el) return
-    const observer = new ResizeObserver(([entry]) => {
-      const h = entry.borderBoxSize?.[0]?.blockSize ?? entry.contentRect.height
-      document.documentElement.style.setProperty('--header-height', `${Math.ceil(h)}px`)
-    })
-    observer.observe(el)
-    return () => observer.disconnect()
-  }, [])
+    window.scrollTo(0, 0)
+  }, [pathname])
 
   return (
     <>

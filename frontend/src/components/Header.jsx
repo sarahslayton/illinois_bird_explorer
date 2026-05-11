@@ -4,12 +4,13 @@ import { Link, useLocation } from 'react-router-dom'
 export default function Header() {
   const location = useLocation()
 
-  // Close any open ilw-header-menu-section dropdown when React Router navigates.
-  // The component handles Escape natively; body.click() was tried and did not work.
+  // Close any open dropdowns when React Router navigates.
+  // ilw-header-menu-section listens for keydown on itself (not document), so dispatching
+  // to document doesn't reach it. Setting .expanded = false directly is the reliable fix.
   useEffect(() => {
-    document.dispatchEvent(
-      new KeyboardEvent('keydown', { key: 'Escape', bubbles: true, cancelable: true })
-    )
+    document.querySelectorAll('ilw-header-menu-section').forEach(section => {
+      section.expanded = false
+    })
   }, [location.pathname])
 
   return (

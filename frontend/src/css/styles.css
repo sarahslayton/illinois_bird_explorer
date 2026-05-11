@@ -392,10 +392,9 @@ ilw-footer {
   width: 100%;
 }
 
-/* Sticky + stacking: keeps the header above hero/content and its dropdowns above everything */
+/* position: relative needed for z-index to apply, so dropdowns appear above the hero section */
 ilw-header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 1000;
 }
 
@@ -547,7 +546,7 @@ ilw-header {
   border-bottom: 1px solid var(--border);
   box-shadow: 0 2px 8px rgba(19, 41, 75, 0.06);
   position: sticky;
-  top: var(--header-height, 120px);
+  top: 0;
   z-index: 100;
 }
 .species-page__controls-inner {
@@ -828,7 +827,7 @@ ilw-header {
   background: var(--navy);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   position: sticky;
-  top: var(--header-height, 120px);
+  top: 0;
   z-index: 200;
 }
 .species-subnav__inner {
